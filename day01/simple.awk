@@ -1,16 +1,10 @@
-BEGIN {
-    elfsum = 0
-    bigelf = 0
-}
-
 NF {
     elfsum = elfsum + $1
+    next
 }
 
-NF == 0 {
-    if ( bigelf < elfsum ) {
-        bigelf = elfsum
-    }
+{
+    if ( bigelf < elfsum ) bigelf = elfsum
     elfsum = 0
 }
 
