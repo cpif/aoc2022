@@ -1,2 +1,3 @@
-# aoc2022
-The advent of code.
+# AOC2022
+
+Eric Wastl's *Advent of Code*, by me.
