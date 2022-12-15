@@ -10,10 +10,5 @@ BEGIN {
     a["B"]["Z"] = 9
 }
 
-{
-    sum = sum + a[$1][$2]
-}
-
-END {
-    print sum
-}
+{sum=sum+a[$1][$2]}
+END{print sum}

@@ -8,8 +8,8 @@ $1~/[0-9]/ {
     }
     next
 }
-$3~/\.\./ {d=gensub(/-[0-9]*$/,"",1,d);next}
-$0~/\$ cd/ {t++;d=d"-"t;next}
+$3~/\.\./{d=gensub(/-[0-9]*$/,"",1,d);next}
+$0~/\$ cd/{t++;d=d"-"t;next}
 END {
     for (s in size) if (size[s]<100000) sum+=size[s]
     max=70000000
