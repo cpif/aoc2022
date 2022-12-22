@@ -11,8 +11,7 @@ function rankelves(newelf) {
     else elves["big"]    = newelf
 }
 function abs(x) {
-    if ( x < 0 ) x *= -1
-    return x
+    return x>=0?x:-x
 }
 function get_sign(x) {
     if ( x < 0 ) return -1
