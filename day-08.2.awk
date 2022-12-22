@@ -6,10 +6,6 @@ function countleft ( i, linenr,     j, max, count) {
             break
         }
         else count++
-#       else if ( current[j] >= max ) {
-#           max = current[j]
-#           count++
-#       }
     }
     return count
 }
