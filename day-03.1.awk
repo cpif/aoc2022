@@ -1,4 +1,4 @@
-@include "alnum"
+BEGIN{alpha="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"}
 function finddupe(line, first, second, arr) {
     first =substr($1,0,length($1)*0.5)
     second=substr($1,length($1)*0.5+1)
