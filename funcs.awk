@@ -18,3 +18,12 @@ function get_sign(x) {
     else if ( x == 0 ) return 0
     else return 1
 }
+function lcm(x,y) {
+    i = x
+    j = y
+    while ( x != y ) {
+        if ( x < y ) x += i
+        else y += j
+    }
+    return x
+}
