@@ -11,7 +11,7 @@ FNR%3==2{split($1,second,"");next}
             break
         }
     }
-    sum=sum+index(alpha,matches)
+    sum+=index(alpha,matches)
     matches=""
 }
 END{print sum}

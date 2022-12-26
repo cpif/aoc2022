@@ -5,7 +5,6 @@ FNR==1 {
     for (i in a_max) b_array[i][1]=a_max[i]
     next
 }
-
 {
     split($0, current, "")
     count+=2
@@ -41,7 +40,6 @@ FNR==1 {
     }
     lastline = FNR
 }
-
 END {
     for ( i in needs_count ) {
         for ( j in needs_count[i] ) {

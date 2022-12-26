@@ -9,5 +9,5 @@ BEGIN {
     a["A"]["Z"] = 8
     a["B"]["Z"] = 9
 }
-{sum=sum+a[$1][$2]}
+{sum+=a[$1][$2]}
 END{print sum}
