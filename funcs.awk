@@ -10,9 +10,7 @@ function rankelves(newelf) {
     }
     else elves["big"]    = newelf
 }
-function abs(x) {
-    return x>=0?x:-x
-}
+function abs(x) { return x>=0?x:-x }
 function get_sign(x) {
     if ( x < 0 ) return -1
     else if ( x == 0 ) return 0
