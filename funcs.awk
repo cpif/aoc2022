@@ -1,15 +1,3 @@
-function rankelves(newelf) {
-    if ( newelf >= elves["biggest"] ) {
-        elves["big"]     = elves["bigger"]
-        elves["bigger"]  = elves["biggest"]
-        elves["biggest"] = newelf
-    }
-    else if ( newelf >= elves["bigger"] ) {
-        elves["big"]     = elves["bigger"]
-        elves["bigger"]  = newelf
-    }
-    else elves["big"]    = newelf
-}
 function abs(x) { return x>=0?x:-x }
 function get_sign(x) {
     if ( x < 0 ) return -1
