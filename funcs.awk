@@ -33,3 +33,6 @@ function gt(x, y) {
     if ( x > y ) return 1
     else return 0
 }
+function is_int(x) {
+    return typeof(x)~/strnum/ || typeof(x)~/number/ ? 1 : 0
+}
