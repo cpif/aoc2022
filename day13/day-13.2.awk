@@ -1,7 +1,5 @@
 BEGIN{s="!#$%&'()*+,-.";c[++d]="2";c[++d]="6"}
-
-NF{count++;c[++d]=parse($0)
-   getline;c[++d]=parse($0)}
+NF{c[++d]=p($0);getline;c[++d]=p($0)}
 
 END {
     asort(c)
@@ -12,15 +10,13 @@ END {
     print t
 }
 
-function parse(x,y,n) {
-    gsub("10","A",x)
+function p(x,y,n) {gsub("10","A",x)
     for (i=1;i<=length(x);i++) {
         switch (substr(x,i,1)) {
             case "[":n++;break
             case ",":y=y substr(s,n,1);break
-            case "]":if (last!="]")n--;break
+            case "]":if (l!="]")n--;break
             default: y=y substr(x,i,1) }
-        last=substr(x,i,1)
-    }
+        l=substr(x,i,1)}
     return y
 }
