@@ -1,7 +1,7 @@
 BEGIN{s="!#$%&'()*+,-.";c[++d]="2";c[++d]="6"}
 
-NF{count++;c[++d] = parse($0)
-   getline;c[++d] = parse($0)}
+NF{count++;c[++d]=parse($0)
+   getline;c[++d]=parse($0)}
 
 END {
     asort(c)
